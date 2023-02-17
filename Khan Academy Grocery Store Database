@@ -1,0 +1,23 @@
+-- Create a grocery store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, department TEXT, name TEXT, cost INTEGER, inventory INTEGER);
+
+INSERT INTO store VALUES (1,"groceries","apples", 1.99, 20);
+INSERT INTO store VALUES (2,"groceries","bananas", 2.99, 12);
+INSERT INTO store VALUES (3,"groceries","carrots", 0.99, 15);
+INSERT INTO store VALUES (4,"groceries","pears", 1.99, 10);
+INSERT INTO store VALUES (5,"groceries","pineapples", 3.99, 10);
+INSERT INTO store VALUES (6,"pets","bones", 11.99, 5);
+INSERT INTO store VALUES (7,"pets","beds", 25.99, 2);
+INSERT INTO store VALUES (8,"pets","food", 22.99, 4);
+INSERT INTO store VALUES (9,"pets","leashes", 6.99, 15);
+INSERT INTO store VALUES (10,"pets","toys", 9.99, 20);
+INSERT INTO store VALUES (11,"sports","basketball", 19.99, 10);
+INSERT INTO store VALUES (12,"sports","football", 14.99, 5);
+INSERT INTO store VALUES (13,"sports","basketball hoop", 149.99, 2);
+INSERT INTO store VALUES (14,"sports","fishing poles", 14.99, 10);
+INSERT INTO store VALUES (15,"sports","bait", 5.99, 20);
+
+-- Display the database ordered by Price
+
+SELECT id, name, cost, inventory FROM store ORDER BY cost
